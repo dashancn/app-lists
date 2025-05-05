@@ -1,3 +1,4 @@
+# Bitget 域名规则
 DOMAIN-SUFFIX,bitgetapp.com
 DOMAIN-SUFFIX,bitgetapps.com
 DOMAIN-SUFFIX,bitget.org
@@ -5,4 +6,15 @@ DOMAIN-SUFFIX,bitget.club
 DOMAIN-SUFFIX,bitget.xyz
 DOMAIN-SUFFIX,bitget.com
 DOMAIN-SUFFIX,bgportable.com
+DOMAIN-SUFFIX,bitgetapi.com
+DOMAIN-SUFFIX,static.bitgetcdn.com
+DOMAIN-SUFFIX,api.bitget.com
+DOMAIN-SUFFIX,ws.bitget.com
+DOMAIN-SUFFIX,cdn.bitgetcontent.com
 DOMAIN-KEYWORD,bitget
+
+# Bitget 相关 IP CIDR（建议配合使用）
+IP-CIDR,47.246.41.0/24,no-resolve
+IP-CIDR,47.246.42.0/24,no-resolve
+IP-CIDR,47.246.43.0/24,no-resolve
+IP-CIDR,47.246.44.0/24,no-resolve
