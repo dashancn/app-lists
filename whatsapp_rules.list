@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.net
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,cdn.whatsapp.net
+IP-CIDR,157.240.0.0/16
+IP-CIDR,31.13.64.0/18
+IP-CIDR,169.45.248.0/22
