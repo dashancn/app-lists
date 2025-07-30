@@ -1,6 +1,7 @@
 # ===============================
 # Talkatone 全量规则集（RULE-SET）
-# 更新时间：2025-07-30 更新版
+# 合并 2 次日志分析结果，优化顺序
+# 更新时间：2025-07-30
 # ===============================
 
 # ===============================
@@ -25,58 +26,86 @@ DOMAIN,sip.talkatone.com
 # 3. 日志中出现的 tktn 子域名
 # ===============================
 DOMAIN,xmpp4.tktn.be
-DOMAIN,relay-sjc-03.tktn.be
 DOMAIN,relay-sjc-02.tktn.be
+DOMAIN,relay-sjc-03.tktn.be
+DOMAIN,relay-sjc-06.tktn.be
 
 # ===============================
-# 4. 依赖域名 & 广告/追踪依赖
+# 4. 核心认证 / Google / Firebase 接口
 # ===============================
-DOMAIN-SUFFIX,inner-active.mobi
-DOMAIN-SUFFIX,amazon-adsystem.com
-DOMAIN-SUFFIX,ads.pubmatic.com
-DOMAIN-SUFFIX,inmobi.com
-DOMAIN-SUFFIX,mobilefuse.com
-DOMAIN-SUFFIX,smaato.net
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,google.com
-DOMAIN-SUFFIX,doubleclick.net
-
-# ===============================
-# 5. 新增认证/第三方依赖域名
-# ===============================
 DOMAIN-SUFFIX,app-measurement.com
-DOMAIN-SUFFIX,googleads.g.doubleclick.net
+DOMAIN-SUFFIX,firebaselogging-pa.googleapis.com
+DOMAIN-SUFFIX,firebase-settings.crashlytics.com
 DOMAIN-SUFFIX,proxy-safebrowsing.googleapis.com
 DOMAIN-SUFFIX,safebrowsing.googleapis.com
-DOMAIN-SUFFIX,firebase-settings.crashlytics.com
-DOMAIN-SUFFIX,checkip.amazonaws.com
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,googleads.g.doubleclick.net
+DOMAIN-SUFFIX,ad.doubleclick.net
 
 # ===============================
-# 6. 其它日志新增依赖（可选广告追踪/统计）
+# 5. Apple 接口
 # ===============================
-DOMAIN-SUFFIX,cdn.taboola.com
-DOMAIN-SUFFIX,app-analytics-services.com
-DOMAIN-SUFFIX,ocsp2.apple.com
-DOMAIN-SUFFIX,www.imdb.com
-DOMAIN-SUFFIX,cdn.mobilefuse.com
-DOMAIN-SUFFIX,sdk-hb.smaato.net
-DOMAIN-SUFFIX,sdk-files.smaato.net
-DOMAIN-SUFFIX,mfx.mobilefuse.com
-DOMAIN-SUFFIX,bidder.criteo.com
 DOMAIN-SUFFIX,itunes.apple.com
-DOMAIN-SUFFIX,gum.criteo.com
+DOMAIN-SUFFIX,inappcheck.itunes.apple.com
+DOMAIN-SUFFIX,client-api.itunes.apple.com
+DOMAIN-SUFFIX,ocsp2.apple.com
 DOMAIN-SUFFIX,token.safebrowsing.apple
 DOMAIN-SUFFIX,proxy.safebrowsing.apple
-DOMAIN-SUFFIX,web.facebook.com
-DOMAIN-SUFFIX,inappcheck.itunes.apple.com
-DOMAIN-SUFFIX,ssp.api.tappx.com
-DOMAIN-SUFFIX,aax.amazon-adsystem.com
-DOMAIN-SUFFIX,ow.pubmatic.com
-DOMAIN-SUFFIX,ads.inmobi.com
 DOMAIN-SUFFIX,amp-api-edge.apps.apple.com
 
 # ===============================
-# 7. IP 段
+# 6. Facebook 接口
+# ===============================
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,web.facebook.com
+DOMAIN-SUFFIX,ep7.facebook.com
+
+# ===============================
+# 7. 广告 & 追踪依赖域名
+# ===============================
+DOMAIN-SUFFIX,inner-active.mobi
+DOMAIN-SUFFIX,amazon-adsystem.com
+DOMAIN-SUFFIX,aax.amazon-adsystem.com
+DOMAIN-SUFFIX,ads.pubmatic.com
+DOMAIN-SUFFIX,ow.pubmatic.com
+DOMAIN-SUFFIX,inmobi.com
+DOMAIN-SUFFIX,ads.inmobi.com
+DOMAIN-SUFFIX,inmobicdn.net
+DOMAIN-SUFFIX,supply.inmobicdn.net
+DOMAIN-SUFFIX,i.l.inmobicdn.net
+DOMAIN-SUFFIX,et-eus.w.inmobi.com
+DOMAIN-SUFFIX,mobilefuse.com
+DOMAIN-SUFFIX,cdn.mobilefuse.com
+DOMAIN-SUFFIX,mfx.mobilefuse.com
+DOMAIN-SUFFIX,smaato.net
+DOMAIN-SUFFIX,sdk-hb.smaato.net
+DOMAIN-SUFFIX,sdk-files.smaato.net
+DOMAIN-SUFFIX,ets-us-east-1.track.smaato.net
+DOMAIN-SUFFIX,cdn.taboola.com
+DOMAIN-SUFFIX,app-analytics-services.com
+DOMAIN-SUFFIX,static-content-1.smadex.com
+DOMAIN-SUFFIX,bidder.criteo.com
+DOMAIN-SUFFIX,gum.criteo.com
+DOMAIN-SUFFIX,track.rtb-sm.com
+DOMAIN-SUFFIX,content.inhousedsp.com
+DOMAIN-SUFFIX,impression.link
+DOMAIN-SUFFIX,beacon-sin1.rubiconproject.com
+DOMAIN-SUFFIX,b.videoamp.com
+DOMAIN-SUFFIX,cdn.js7k.com
+DOMAIN-SUFFIX,pn.ybp.yahoo.com
+DOMAIN-SUFFIX,s.yimg.com
+
+# ===============================
+# 8. 其它依赖服务
+# ===============================
+DOMAIN-SUFFIX,checkip.amazonaws.com
+DOMAIN-SUFFIX,www.imdb.com
+DOMAIN-SUFFIX,ssp.api.tappx.com
+
+# ===============================
+# 9. IP 段
 # ===============================
 IP-CIDR,34.231.217.179/32
 IP-CIDR,54.209.120.58/32
