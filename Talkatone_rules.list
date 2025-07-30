@@ -1,7 +1,6 @@
 # ===============================
 # Talkatone 全量规则集（RULE-SET）
-# 作用：所有域名 & IP 自动走代理节点
-# 更新时间：2025-07-30
+# 更新时间：2025-07-30 更新版
 # ===============================
 
 # ===============================
@@ -43,7 +42,41 @@ DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,doubleclick.net
 
 # ===============================
-# 5. IP 段
+# 5. 新增认证/第三方依赖域名
+# ===============================
+DOMAIN-SUFFIX,app-measurement.com
+DOMAIN-SUFFIX,googleads.g.doubleclick.net
+DOMAIN-SUFFIX,proxy-safebrowsing.googleapis.com
+DOMAIN-SUFFIX,safebrowsing.googleapis.com
+DOMAIN-SUFFIX,firebase-settings.crashlytics.com
+DOMAIN-SUFFIX,checkip.amazonaws.com
+
+# ===============================
+# 6. 其它日志新增依赖（可选广告追踪/统计）
+# ===============================
+DOMAIN-SUFFIX,cdn.taboola.com
+DOMAIN-SUFFIX,app-analytics-services.com
+DOMAIN-SUFFIX,ocsp2.apple.com
+DOMAIN-SUFFIX,www.imdb.com
+DOMAIN-SUFFIX,cdn.mobilefuse.com
+DOMAIN-SUFFIX,sdk-hb.smaato.net
+DOMAIN-SUFFIX,sdk-files.smaato.net
+DOMAIN-SUFFIX,mfx.mobilefuse.com
+DOMAIN-SUFFIX,bidder.criteo.com
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,gum.criteo.com
+DOMAIN-SUFFIX,token.safebrowsing.apple
+DOMAIN-SUFFIX,proxy.safebrowsing.apple
+DOMAIN-SUFFIX,web.facebook.com
+DOMAIN-SUFFIX,inappcheck.itunes.apple.com
+DOMAIN-SUFFIX,ssp.api.tappx.com
+DOMAIN-SUFFIX,aax.amazon-adsystem.com
+DOMAIN-SUFFIX,ow.pubmatic.com
+DOMAIN-SUFFIX,ads.inmobi.com
+DOMAIN-SUFFIX,amp-api-edge.apps.apple.com
+
+# ===============================
+# 7. IP 段
 # ===============================
 IP-CIDR,34.231.217.179/32
 IP-CIDR,54.209.120.58/32
