@@ -1,0 +1,7 @@
+# Kraken 精简规则（推荐）
+DOMAIN-SUFFIX,kraken.com
+DOMAIN-SUFFIX,kraken.zendesk.com
+DOMAIN-KEYWORD,kraken
+
+# Kraken 相关 IP
+IP-CIDR,216.23.90.178/32,no-resolve
